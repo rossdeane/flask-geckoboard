@@ -362,13 +362,13 @@ class BulletWidgetDecorator(WidgetDecorator):
                     max_point = max(axis_points)
                     min_point = min(axis_points)
                     third = (max_point - min_point) / 3
-                    range.append({'color': 'red',
+                    _range.append({'color': 'red',
                                   'start': min_point,
                                   'end': min_point + third - 1})
-                    range.append({'color': 'amber',
+                    _range.append({'color': 'amber',
                                   'start': min_point + third,
                                   'end': max_point - third - 1})
-                    range.append({'color': 'red',
+                    _range.append({'color': 'red',
                                   'start': max_point - third,
                                   'end': max_point})
                 else:
